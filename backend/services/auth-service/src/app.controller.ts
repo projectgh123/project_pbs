@@ -1,12 +1,22 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller } from '@nestjs/common';
+import { MessagePattern } from '@nestjs/microservices';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
 
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  @MessagePattern('register')
+  register(data: any) {
+    return {
+      message: 'Register berhasil',
+      data,
+    };
+  }
+
+  @MessagePattern('login')
+  login(data: any) {
+    return {
+      message: 'Login berhasil',
+      data,
+    };
   }
 }
