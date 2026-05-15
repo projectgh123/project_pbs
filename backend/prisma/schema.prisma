@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Wisata {
+  id          Int      @id @default(autoincrement())
+  nama        String
+  deskripsi   String
+  lokasi      String
+  harga       Int
+  gambar      String
+  createdAt   DateTime @default(now())
+}
+
+model Review {
+  id          Int      @id @default(autoincrement())
+  nama        String
+  komentar    String
+  rating      Int
+  createdAt   DateTime @default(now())
+}
