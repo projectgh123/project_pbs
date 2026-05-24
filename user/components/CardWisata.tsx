@@ -2,24 +2,36 @@ import Image from "next/image";
 
 export default function CardWisata() {
   return (
-    <div className="card">
+    <section className="container">
 
-      <Image
-        src="/pantai1.jpg"
-        width={400}
-        height={300}
-        alt="Pantai Sanggar"
-      />
+      <h2 className="title">
+        Informasi Wisata
+      </h2>
 
-      <div className="card-content">
-        <h3>Pantai Sanggar</h3>
+      <div className="grid">
 
-        <p>
-          Pantai indah di Lampung Selatan dengan
-          pemandangan laut yang tenang.
-        </p>
+        <div className="card">
+
+          <Image
+            src="/pantai1.jpg"
+            width={400}
+            height={300}
+            alt="Pantai Sanggar"
+          />
+
+          <div className="card-content">
+            <h3>Pantai Sanggar</h3>
+
+            <p>
+              Pantai indah di Lampung Selatan dengan
+              pemandangan laut yang tenang.
+            </p>
+          </div>
+
+        </div>
+
       </div>
 
-    </div>
+    </section>
   );
 }
