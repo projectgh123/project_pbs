@@ -1,0 +1,101 @@
+/* Background utama */
+.main-container {
+  min-height: 100vh;
+  background-color: #f0f9ff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 20px;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px;
+}
+
+.hero-title {
+  font-size: 50px;
+  color: #1e40af;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  color: #555;
+  font-size: 18px;
+}
+
+.button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1e3a8a;
+}
+
+/* Informasi */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0,0,0,.2);
+}
+
+.image-placeholder {
+  height: 220px;
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e40af;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
