@@ -13,7 +13,7 @@ export default function Navbar() {
         <ul className="menu">
           <li>Beranda</li>
           <li> <a href="/tentang">Tentang</a> </li>
-          <li> <Link href="/public">Galeri</Link> </li>
+          <li> <Link href="/galeri">Galeri</Link> </li>
           <li> <a href="/wisata">Wisata</a> </li>
           <li> <a href="/lokasi">Lokasi</a> </li>
           <li> <a href="/kontak">Kontak</a> </li>
