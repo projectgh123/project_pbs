@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="navbar">
@@ -11,7 +13,7 @@ export default function Navbar() {
         <ul className="menu">
           <li>Beranda</li>
           <li> <a href="/tentang">Tentang</a> </li>
-          <li> <a href="/public">Galeri</a> </li>
+          <li> <Link href="/public">Galeri</Link> </li>
           <li> <a href="/wisata">Wisata</a> </li>
           <li> <a href="/lokasi">Lokasi</a> </li>
           <li> <a href="/kontak">Kontak</a> </li>
