@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer>
-      <h1>Footer</h1>
+    <footer className="footer">
+      <p>© 2026 WisataCui</p>
     </footer>
   );
 }
