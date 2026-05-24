@@ -13,10 +13,11 @@ export default function CardWisata() {
         <div className="card">
 
           <Image
-            src="/pantai1.jpg"
-            width={400}
-            height={300}
-            alt="Pantai Sanggar"
+             src="/pantai1.jpg"
+             width={400}
+             height={300}
+             alt="Pantai Sanggar"
+             loading="eager"
           />
 
           <div className="card-content">
