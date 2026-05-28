@@ -321,6 +321,12 @@ body {
   color: var(--ink-900);
 }
 
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 24px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
