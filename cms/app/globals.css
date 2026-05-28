@@ -155,6 +155,9 @@ body {
 }
 
 .admin-sidebar .button-row {
+  gap: 8px;
+
+
 }
 
 @media (prefers-color-scheme: dark) {
