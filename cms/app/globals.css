@@ -21,6 +21,7 @@
 }
 
 @theme inline {
+  --font-sans: var(--font-body);
 }
 
 @media (prefers-color-scheme: dark) {
