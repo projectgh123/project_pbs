@@ -240,6 +240,7 @@ body {
 .admin-subtitle {
   color: var(--ink-500);
   margin: 0;
+  max-width: 640px;
 
 }
 
