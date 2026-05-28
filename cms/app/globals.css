@@ -59,6 +59,10 @@ body {
 }
 
 .admin-shell {
+  display: grid;
+
+
+
 }
 
 @media (prefers-color-scheme: dark) {
