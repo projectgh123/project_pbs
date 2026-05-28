@@ -217,6 +217,10 @@ body {
   gap: 8px;
 }
 
+.header-row {
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
