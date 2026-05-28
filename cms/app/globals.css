@@ -69,6 +69,7 @@ body {
   padding: 32px 24px;
   background:
     linear-gradient(160deg, rgba(18, 22, 25, 0.94), rgba(18, 22, 25, 0.85)),
+    radial-gradient(circle at top, rgba(226, 137, 92, 0.24), transparent 55%);
 }
 
 @media (prefers-color-scheme: dark) {
