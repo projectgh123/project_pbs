@@ -200,7 +200,7 @@ body {
 
 .nav-pill:disabled {
   opacity: 0.5;
-
+  cursor: not-allowed;
 }
 
 @media (prefers-color-scheme: dark) {
