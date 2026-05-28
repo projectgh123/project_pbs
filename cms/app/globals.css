@@ -102,6 +102,10 @@ body {
   padding: 28px 26px;
 }
 
+.login-actions {
+  margin-top: 16px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
