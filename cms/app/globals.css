@@ -294,6 +294,15 @@ body {
   gap: 12px;
 }
 
+.chart-row {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--ink-700);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
