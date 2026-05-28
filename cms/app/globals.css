@@ -266,7 +266,7 @@ body {
 .stat-card {
   display: flex;
   flex-direction: column;
-
+  gap: 6px;
 }
 
 @media (prefers-color-scheme: dark) {
