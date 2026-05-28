@@ -37,6 +37,7 @@ body {
 }
 
 .admin-body {
+  font-family: var(--font-body), "Segoe UI", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
