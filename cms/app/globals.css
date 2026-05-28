@@ -244,6 +244,10 @@ body {
   line-height: 1.6;
 }
 
+.grid-2 {
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
