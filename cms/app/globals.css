@@ -39,6 +39,8 @@ body {
 .admin-body {
   font-family: var(--font-body), "Segoe UI", sans-serif;
   color: var(--ink-900);
+  background:
+    radial-gradient(circle at 12% 12%, rgba(226, 137, 92, 0.25), transparent 45%),
 }
 
 @media (prefers-color-scheme: dark) {
