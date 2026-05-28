@@ -72,6 +72,7 @@ body {
     radial-gradient(circle at top, rgba(226, 137, 92, 0.24), transparent 55%);
   color: #f6efe7;
   display: flex;
+  flex-direction: column;
 }
 
 @media (prefers-color-scheme: dark) {
