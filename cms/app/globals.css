@@ -241,7 +241,7 @@ body {
   color: var(--ink-500);
   margin: 0;
   max-width: 640px;
-
+  line-height: 1.6;
 }
 
 @media (prefers-color-scheme: dark) {
