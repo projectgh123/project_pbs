@@ -251,6 +251,7 @@ body {
 }
 
 .stats-grid {
+  display: grid;
 
 }
 
