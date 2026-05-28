@@ -225,6 +225,7 @@ body {
 }
 
 .header-actions {
+  display: flex;
 
 }
 
