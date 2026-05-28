@@ -214,7 +214,7 @@ body {
 .admin-header {
   display: flex;
   flex-direction: column;
-
+  gap: 8px;
 }
 
 @media (prefers-color-scheme: dark) {
