@@ -21,10 +21,6 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-
-
-
 }
 
 @media (prefers-color-scheme: dark) {
