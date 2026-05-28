@@ -245,6 +245,7 @@ body {
 }
 
 .grid-2 {
+  display: grid;
 
 }
 
