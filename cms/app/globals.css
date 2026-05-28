@@ -45,6 +45,9 @@ body {
     linear-gradient(135deg, var(--paper-50), #ffffff 55%, var(--sand-100));
 }
 
+.admin-body::before {
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
