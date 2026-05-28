@@ -135,6 +135,10 @@ body {
   max-width: 100%;
 }
 
+.admin-sidebar .field textarea,
+.admin-sidebar .field select {
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
