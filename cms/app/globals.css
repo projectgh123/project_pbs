@@ -167,6 +167,10 @@ body {
 }
 
 .brand {
+  font-family: var(--font-display), "Times New Roman", serif;
+
+
+
 }
 
 @media (prefers-color-scheme: dark) {
