@@ -199,6 +199,7 @@ body {
 }
 
 .nav-pill:disabled {
+  opacity: 0.5;
 
 }
 
