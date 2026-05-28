@@ -327,6 +327,10 @@ body {
   gap: 24px;
 }
 
+.access-card {
+  max-width: 420px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
