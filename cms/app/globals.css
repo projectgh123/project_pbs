@@ -269,6 +269,12 @@ body {
   gap: 6px;
 }
 
+.stat-value {
+  font-size: 26px;
+  margin: 0;
+  font-family: var(--font-display), "Times New Roman", serif;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
