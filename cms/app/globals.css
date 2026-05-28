@@ -203,6 +203,10 @@ body {
   cursor: not-allowed;
 }
 
+.admin-main {
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
