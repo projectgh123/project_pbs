@@ -183,6 +183,7 @@ body {
 .nav-pill {
   padding: 10px 16px;
   border-radius: 999px;
+  background: rgba(247, 241, 234, 0.12);
 
 }
 
