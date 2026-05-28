@@ -239,6 +239,7 @@ body {
 
 .admin-subtitle {
   color: var(--ink-500);
+  margin: 0;
 
 }
 
