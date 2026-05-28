@@ -303,6 +303,13 @@ body {
   color: var(--ink-700);
 }
 
+.chart-track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(18, 22, 25, 0.08);
+  overflow: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
