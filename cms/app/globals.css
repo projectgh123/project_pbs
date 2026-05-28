@@ -316,6 +316,11 @@ body {
   background: linear-gradient(90deg, var(--ocean-500), var(--clay-500));
 }
 
+.chart-value {
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
