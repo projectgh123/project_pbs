@@ -331,6 +331,12 @@ body {
   max-width: 420px;
 }
 
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
