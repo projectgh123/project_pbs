@@ -17,6 +17,7 @@
   --surface: #ffffff;
   --shadow: 0 24px 60px rgba(18, 22, 25, 0.12);
   --shadow-soft: 0 16px 36px rgba(18, 22, 25, 0.08);
+  --ring: 0 0 0 3px rgba(15, 109, 109, 0.18);
 }
 
 @theme inline {
