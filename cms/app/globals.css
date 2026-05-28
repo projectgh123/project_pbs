@@ -97,6 +97,11 @@ body {
   padding: 48px 20px;
 }
 
+.login-panel {
+  width: min(420px, 100%);
+  padding: 28px 26px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
