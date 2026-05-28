@@ -41,6 +41,7 @@ body {
   color: var(--ink-900);
   background:
     radial-gradient(circle at 12% 12%, rgba(226, 137, 92, 0.25), transparent 45%),
+    radial-gradient(circle at 90% 18%, rgba(15, 109, 109, 0.16), transparent 45%),
 }
 
 @media (prefers-color-scheme: dark) {
