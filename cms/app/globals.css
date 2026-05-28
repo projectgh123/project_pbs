@@ -227,7 +227,7 @@ body {
 .header-actions {
   display: flex;
   flex-wrap: wrap;
-
+  gap: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
