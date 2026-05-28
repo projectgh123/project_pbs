@@ -149,6 +149,10 @@ body {
   justify-content: flex-start;
 }
 
+.admin-sidebar .card-title {
+  margin-bottom: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
