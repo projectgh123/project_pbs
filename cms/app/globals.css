@@ -113,6 +113,17 @@ body {
   margin-bottom: 8px;
 }
 
+.login-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 109, 109, 0.7),
+    rgba(226, 137, 92, 0.4),
+    transparent
+  );
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
