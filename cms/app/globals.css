@@ -107,6 +107,10 @@ body {
 }
 
 .login-header {
+  display: flex;
+
+
+
 }
 
 @media (prefers-color-scheme: dark) {
