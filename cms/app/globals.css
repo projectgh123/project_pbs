@@ -231,6 +231,7 @@ body {
 }
 
 .admin-title {
+  font-family: var(--font-display), "Times New Roman", serif;
 
 }
 
