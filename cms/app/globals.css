@@ -258,6 +258,7 @@ body {
 }
 
 .dashboard-grid {
+  display: grid;
 
 }
 
