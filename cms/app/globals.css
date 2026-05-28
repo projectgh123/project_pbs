@@ -264,6 +264,7 @@ body {
 }
 
 .stat-card {
+  display: flex;
 
 }
 
