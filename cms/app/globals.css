@@ -77,6 +77,9 @@ body {
   border-right: 1px solid rgba(18, 22, 25, 0.2);
 }
 
+.admin-sidebar .card {
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
