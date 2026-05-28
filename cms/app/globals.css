@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-
+  --ink-900: #121619;
 }
 
 @theme inline {
