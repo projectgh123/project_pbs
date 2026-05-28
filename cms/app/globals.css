@@ -65,6 +65,10 @@ body {
   position: relative;
 }
 
+.admin-sidebar {
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
