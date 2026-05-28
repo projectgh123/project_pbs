@@ -74,6 +74,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  border-right: 1px solid rgba(18, 22, 25, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
