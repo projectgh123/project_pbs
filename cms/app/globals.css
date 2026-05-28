@@ -188,7 +188,7 @@ body {
   border: none;
   color: inherit;
   text-align: left;
-
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
