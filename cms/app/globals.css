@@ -226,6 +226,7 @@ body {
 
 .header-actions {
   display: flex;
+  flex-wrap: wrap;
 
 }
 
