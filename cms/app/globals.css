@@ -198,6 +198,10 @@ body {
     0 10px 20px rgba(18, 22, 25, 0.25);
 }
 
+.nav-pill:disabled {
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
