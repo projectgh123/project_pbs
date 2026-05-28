@@ -156,7 +156,7 @@ body {
 
 .admin-sidebar .button-row {
   gap: 8px;
-
+  flex-direction: column;
 
 }
 
