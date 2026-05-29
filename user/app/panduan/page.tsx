@@ -101,6 +101,36 @@ export default function Panduan() {
         </div>
 
       </section>
+
+    {/* STATISTIK */}
+
+<section className="stats-section">
+
+  <div className="stats-container">
+
+    <div className="stats-card">
+      <h3>10K+</h3>
+      <p>Pengunjung</p>
+    </div>
+
+    <div className="stats-card">
+      <h3>4.9⭐</h3>
+      <p>Rating Wisata</p>
+    </div>
+
+    <div className="stats-card">
+      <h3>15+</h3>
+      <p>Spot Foto</p>
+    </div>
+
+    <div className="stats-card">
+      <h3>08:00</h3>
+      <p>Buka Wisata</p>
+    </div>
+
+  </div>
+
+</section>
         
     {/* FAQ */}
 
