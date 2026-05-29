@@ -17,6 +17,7 @@ export default function Navbar() {
           <li> <a href="/wisata">Wisata</a> </li>
           <li> <a href="/lokasi">Lokasi</a> </li>
           <li> <a href="/kontak">Kontak</a> </li>
+          <li><a href="/panduan">Panduan</a></li>
         </ul>
 
       </div>
