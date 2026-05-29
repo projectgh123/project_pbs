@@ -77,8 +77,20 @@ body{
 }
 
 .hero-content{
-  color:white;
-  max-width:800px;
+  position:relative;
+  z-index:2;
+
+  color:rgb(255, 255, 255);
+
+  max-width:700px;
+  padding:20px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
 }
 
 .hero-title{
