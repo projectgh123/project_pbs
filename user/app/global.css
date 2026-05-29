@@ -425,4 +425,46 @@ body{
 
 }
 
+/* ========================= */
+/* HALAMAN LOKASI */
+/* ========================= */
+
+.lokasi-page{
+  min-height:100vh;
+  padding:100px 20px;
+}
+
+.lokasi-container{
+  max-width:1000px;
+  margin:auto;
+  background:white;
+  padding:50px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.lokasi-title{
+  font-size:45px;
+  color:#0f172a;
+  margin-bottom:20px;
+}
+
+.lokasi-text{
+  font-size:18px;
+  color:#475569;
+  margin-bottom:30px;
+  line-height:1.8;
+}
+
+.lokasi-box{
+  background:#e0f2fe;
+  padding:25px;
+  border-radius:15px;
+}
+
+.lokasi-box p{
+  margin-bottom:10px;
+  font-size:18px;
+}
+
 }
