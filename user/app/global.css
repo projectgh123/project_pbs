@@ -231,4 +231,88 @@ body{
     font-size:32px;
   }
 
+  /* ===================== */
+/* HALAMAN TENTANG */
+/* ===================== */
+
+.tentang {
+  min-height: 100vh;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #f0f9ff, #dbeafe);
+}
+
+.tentang-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.tentang-image img {
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.tentang-content {
+  flex: 1;
+}
+
+.tentang-content h1 {
+  font-size: 50px;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.tentang-content p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.tentang-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.info-box {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+}
+
+.info-box h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .tentang-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tentang-content h1 {
+    font-size: 38px;
+  }
+
+  .tentang-info {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 }
