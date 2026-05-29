@@ -1,4 +1,31 @@
 export default function Panduan() {
+  const tips = [
+    {
+      id: 1,
+      icon: "☀️",
+      title: "Datang Saat Sore",
+      desc: "Waktu terbaik menikmati sunset di Sanggar Beach."
+    },
+    {
+      id: 2,
+      icon: "📸",
+      title: "Bawa Kamera",
+      desc: "Banyak spot foto instagramable di sekitar pantai."
+    },
+    {
+      id: 3,
+      icon: "🧴",
+      title: "Gunakan Sunscreen",
+      desc: "Cuaca pantai cukup panas saat siang hari."
+    },
+    {
+      id: 4,
+      icon: "🥤",
+      title: "Bawa Air Minum",
+      desc: "Tetap terhidrasi selama perjalanan wisata."
+    }
+  ];
+
   return (
     <main className="panduan-page">
 
@@ -22,89 +49,54 @@ export default function Panduan() {
 
       </section>
 
-      {/* CONTENT */}
+      {/* TIPS */}
       <section className="panduan-container">
 
-        {/* CARD */}
+        <h2 className="panduan-title">
+          Tips Sebelum Berkunjung
+        </h2>
+
         <div className="panduan-grid">
 
-          <div className="panduan-card">
-            <h3>🚗 Transportasi</h3>
-            <p>
-              Pastikan kendaraan dalam kondisi baik
-              sebelum perjalanan.
-            </p>
-          </div>
+          {tips.map((item) => (
+            <div
+              key={item.id}
+              className="panduan-card"
+            >
 
-          <div className="panduan-card">
-            <h3>🌤 Cuaca</h3>
-            <p>
-              Datang saat cuaca cerah untuk menikmati
-              pemandangan pantai.
-            </p>
-          </div>
+              <div className="panduan-icon">
+                {item.icon}
+              </div>
 
-          <div className="panduan-card">
-            <h3>🧴 Perlengkapan</h3>
-            <p>
-              Gunakan sunblock dan bawa topi
-              agar lebih nyaman.
-            </p>
-          </div>
+              <h3>
+                {item.title}
+              </h3>
 
-          <div className="panduan-card">
-            <h3>🗑 Kebersihan</h3>
-            <p>
-              Jagalah kebersihan pantai selama wisata.
-            </p>
-          </div>
+              <p>
+                {item.desc}
+              </p>
+
+            </div>
+          ))}
 
         </div>
 
-        {/* CHECKLIST */}
+      </section>
+
+      {/* CHECKLIST */}
+      <section className="checklist-section">
+
+        <h2>
+          ✅ Checklist Barang
+        </h2>
+
         <div className="checklist-box">
 
-          <h2>
-            🎒 Checklist Barang
-          </h2>
-
-          <ul>
-            <li>✔ Air minum</li>
-            <li>✔ Kamera</li>
-            <li>✔ Sunblock</li>
-            <li>✔ Sandal pantai</li>
-            <li>✔ Topi</li>
-          </ul>
-
-        </div>
-
-        {/* FAQ */}
-        <div className="faq-box">
-
-          <h2>
-            ❓ Pertanyaan Umum
-          </h2>
-
-          <div className="faq-item">
-            <h3>Apakah ada area parkir?</h3>
-            <p>
-              Ya, tersedia area parkir motor dan mobil.
-            </p>
-          </div>
-
-          <div className="faq-item">
-            <h3>Apakah aman untuk keluarga?</h3>
-            <p>
-              Sanggar Beach cocok untuk wisata keluarga.
-            </p>
-          </div>
-
-          <div className="faq-item">
-            <h3>Apakah ada tempat makan?</h3>
-            <p>
-              Tersedia beberapa warung di sekitar pantai.
-            </p>
-          </div>
+          <p>✔️ Topi atau payung</p>
+          <p>✔️ Sandal pantai</p>
+          <p>✔️ Kamera / HP</p>
+          <p>✔️ Air minum</p>
+          <p>✔️ Sunscreen</p>
 
         </div>
 
