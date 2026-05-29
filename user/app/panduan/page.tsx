@@ -101,6 +101,53 @@ export default function Panduan() {
         </div>
 
       </section>
+        
+    {/* FAQ */}
+
+<section className="faq-section">
+
+  <h2>
+    ❓ Pertanyaan Umum
+  </h2>
+
+  <div className="faq-container">
+
+    <details className="faq-item">
+      <summary>
+        Apakah pantai cocok untuk keluarga?
+      </summary>
+
+      <p>
+        Ya, Sanggar Beach cocok untuk keluarga
+        dan memiliki area santai yang nyaman.
+      </p>
+    </details>
+
+    <details className="faq-item">
+      <summary>
+        Apakah tersedia tempat parkir?
+      </summary>
+
+      <p>
+        Tersedia parkir motor dan mobil
+        di area wisata pantai.
+      </p>
+    </details>
+
+    <details className="faq-item">
+      <summary>
+        Kapan waktu terbaik berkunjung?
+      </summary>
+
+      <p>
+        Waktu terbaik adalah sore hari
+        untuk menikmati sunset.
+      </p>
+    </details>
+
+  </div>
+
+</section>
 
     </main>
   );
