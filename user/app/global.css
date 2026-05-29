@@ -857,4 +857,49 @@ body{
   line-height:1.7;
 }
 
+/* ========================= */
+/* STATISTIK */
+/* ========================= */
+
+.stats-section{
+  padding:20px 0 80px;
+}
+
+.stats-container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.stats-card{
+  background:white;
+  padding:40px 20px;
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+  transition:0.4s;
+}
+
+.stats-card:hover{
+  transform:translateY(-10px) scale(1.03);
+}
+
+.stats-card h3{
+  font-size:42px;
+  color:#0ea5e9;
+  margin-bottom:15px;
+}
+
+.stats-card p{
+  font-size:18px;
+  color:#475569;
+}
+
 }
