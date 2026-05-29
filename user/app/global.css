@@ -231,86 +231,196 @@ body{
     font-size:32px;
   }
 
-  /* ===================== */
+ /* ========================= */
 /* HALAMAN TENTANG */
-/* ===================== */
+/* ========================= */
 
-.tentang {
-  min-height: 100vh;
-  padding: 100px 20px;
-  background: linear-gradient(to bottom, #f0f9ff, #dbeafe);
+.tentang-page{
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+    to bottom,
+    #e0f2fe,
+    #f8fafc
+  );
+
+  padding:100px 20px;
 }
 
-.tentang-container {
-  max-width: 1200px;
-  margin: auto;
+/* WRAPPER */
 
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
+.tentang-wrapper{
+  max-width:1200px;
+  margin:auto;
+
+  display:flex;
+  align-items:center;
+  gap:70px;
+
+  flex-wrap:wrap;
 }
 
-.tentang-image img {
-  border-radius: 20px;
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+/* IMAGE */
+
+.tentang-image{
+  flex:1;
 }
 
-.tentang-content {
-  flex: 1;
+.tentang-image img{
+  width:100%;
+  border-radius:30px;
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,.2);
+
+  transition:0.5s;
 }
 
-.tentang-content h1 {
-  font-size: 50px;
-  color: #1e3a8a;
-  margin-bottom: 20px;
+.tentang-image img:hover{
+  transform:scale(1.03);
 }
 
-.tentang-content p {
-  font-size: 18px;
-  color: #444;
-  line-height: 1.8;
-  margin-bottom: 30px;
+/* CONTENT */
+
+.tentang-content{
+  flex:1;
 }
 
-.tentang-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.badge{
+  background:#0ea5e9;
+  color:white;
+
+  padding:10px 20px;
+  border-radius:999px;
+
+  font-size:14px;
 }
 
-.info-box {
-  background: white;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+.tentang-content h1{
+  font-size:55px;
+  color:#0f172a;
 
-  transition: 0.3s;
+  margin:25px 0;
+  line-height:1.2;
 }
 
-.info-box:hover {
-  transform: translateY(-5px);
+.tentang-content p{
+  font-size:18px;
+  color:#475569;
+
+  line-height:1.8;
+  margin-bottom:35px;
 }
 
-.info-box h3 {
-  color: #2563eb;
-  margin-bottom: 10px;
+/* GRID */
+
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+
+  margin-bottom:35px;
+}
+
+/* CARD */
+
+.info-card{
+  background:rgba(255,255,255,.7);
+
+  backdrop-filter:blur(10px);
+
+  padding:25px;
+  border-radius:20px;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.08);
+
+  transition:0.4s;
+}
+
+.info-card:hover{
+  transform:translateY(-8px);
+}
+
+.info-card h3{
+  margin-bottom:10px;
+  color:#0284c7;
+}
+
+.info-card p{
+  margin:0;
+}
+
+/* BUTTON */
+
+.tentang-btn{
+  padding:15px 35px;
+  border:none;
+
+  border-radius:14px;
+
+  background:#0ea5e9;
+  color:white;
+
+  font-size:17px;
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.tentang-btn:hover{
+  background:#0284c7;
+  transform:scale(1.05);
+}
+
+/* STATISTIK */
+
+.statistik{
+  max-width:1100px;
+  margin:100px auto 0;
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.stat-box{
+  background:white;
+  padding:40px;
+
+  border-radius:25px;
+  text-align:center;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.08);
+}
+
+.stat-box h2{
+  font-size:45px;
+  color:#0284c7;
+
+  margin-bottom:10px;
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
 
-  .tentang-container {
-    flex-direction: column;
-    text-align: center;
+@media(max-width:900px){
+
+  .tentang-wrapper{
+    flex-direction:column;
   }
 
-  .tentang-content h1 {
-    font-size: 38px;
+  .tentang-content h1{
+    font-size:40px;
   }
 
-  .tentang-info {
-    grid-template-columns: 1fr;
+  .info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .statistik{
+    grid-template-columns:1fr;
   }
 
 }
