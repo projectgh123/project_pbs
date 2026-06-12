@@ -904,3 +904,40 @@ body{
   color:#475569;
 }
 
+/* ========================= */
+/* WISATA */
+/* ========================= */
+
+.wisata-page{
+  min-height:100vh;
+}
+
+.wisata-header{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.wisata-header h1{
+  font-size:60px;
+  color:#0f172a;
+  margin-bottom:20px;
+}
+
+.wisata-header p{
+  font-size:22px;
+  color:#64748b;
+}
+
+.wisata-content{
+  width:90%;
+  max-width:1000px;
+  margin:auto;
+  padding-bottom:80px;
+}
+
+.wisata-card{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
