@@ -135,6 +135,50 @@ export default function Wisata() {
 
 </section>
 
+{/* TESTIMONI */}
+
+<section className="testimoni-section">
+
+  <h2 className="testimoni-title">
+    ⭐ Ulasan Pengunjung
+  </h2>
+
+  <div className="testimoni-grid">
+
+    <div className="testimoni-card">
+      <h3>⭐⭐⭐⭐⭐</h3>
+
+      <p>
+        Pantainya bersih dan pemandangan sunset sangat indah.
+      </p>
+
+      <span>- Andi</span>
+    </div>
+
+    <div className="testimoni-card">
+      <h3>⭐⭐⭐⭐⭐</h3>
+
+      <p>
+        Tempat wisata yang cocok untuk keluarga dan liburan.
+      </p>
+
+      <span>- Siti</span>
+    </div>
+
+    <div className="testimoni-card">
+      <h3>⭐⭐⭐⭐⭐</h3>
+
+      <p>
+        Banyak spot foto menarik dan suasananya nyaman.
+      </p>
+
+      <span>- Budi</span>
+    </div>
+
+  </div>
+
+</section>
+
     </main>
   );
 }
