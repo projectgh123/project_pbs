@@ -89,6 +89,52 @@ export default function Wisata() {
 
       </section>
 
+      {/* AKTIVITAS */}
+
+<section className="aktivitas-section">
+
+  <h2 className="aktivitas-title">
+    🎯 Aktivitas Wisata
+  </h2>
+
+  <div className="aktivitas-grid">
+
+    <div className="aktivitas-card">
+      <h3>🌅 Menikmati Sunset</h3>
+      <p>
+        Nikmati pemandangan matahari terbenam yang indah
+        di tepi pantai.
+      </p>
+    </div>
+
+    <div className="aktivitas-card">
+      <h3>📸 Berfoto</h3>
+      <p>
+        Banyak spot foto menarik yang cocok untuk
+        media sosial.
+      </p>
+    </div>
+
+    <div className="aktivitas-card">
+      <h3>🏖 Bersantai</h3>
+      <p>
+        Duduk santai menikmati angin pantai bersama
+        keluarga dan teman.
+      </p>
+    </div>
+
+    <div className="aktivitas-card">
+      <h3>🍽 Kuliner Pantai</h3>
+      <p>
+        Menikmati makanan dan minuman di sekitar
+        area wisata.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
     </main>
   );
 }
