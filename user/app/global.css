@@ -1000,3 +1000,52 @@ body{
 .wisata-card ul{
   padding-left:20px;
 }
+
+/* ========================= */
+/* AKTIVITAS WISATA */
+/* ========================= */
+
+.aktivitas-section{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  padding-bottom:80px;
+}
+
+.aktivitas-title{
+  text-align:center;
+  font-size:40px;
+  margin-bottom:40px;
+  color:#0f172a;
+}
+
+.aktivitas-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.aktivitas-card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.aktivitas-card:hover{
+  transform:translateY(-8px);
+}
+
+.aktivitas-card h3{
+  margin-bottom:15px;
+  color:#0f172a;
+}
+
+.aktivitas-card p{
+  color:#64748b;
+  line-height:1.7;
+}
