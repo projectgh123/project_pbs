@@ -13,7 +13,7 @@ export default function CardWisata() {
         <div className="card">
 
           <Image
-             src="/pantai1.jpg"
+             src="/pantai5.jpeg"
              width={400}
              height={300}
              alt="Pantai Sanggar"
