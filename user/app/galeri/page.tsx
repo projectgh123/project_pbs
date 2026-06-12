@@ -9,29 +9,54 @@ export default function Galeri() {
   ];
 
   return (
-    <main className="min-h-screen p-10 bg-sky-50">
+    <main className="galeri-page">
 
-      <h1 className="text-4xl font-bold text-blue-800 mb-8 text-center">
-        Galeri Wisata Sanggar Beach
-      </h1>
+      {/* Hero */}
+      <section className="galeri-hero">
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="galeri-hero-content">
 
-        {images.map((img, i) => (
-          <div key={i} className="rounded-xl overflow-hidden shadow-lg">
+          <h1>
+            📸 Galeri Sanggar Beach
+          </h1>
 
-            <Image
-              src={img}
-              width={500}
-              height={300}
-              alt={`galeri-${i}`}
-              className="w-full h-60 object-cover"
-            />
+          <p>
+            Kumpulan momen terbaik dan keindahan
+            wisata Sanggar Beach Lampung Selatan
+          </p>
 
-          </div>
-        ))}
+        </div>
 
-      </div>
+      </section>
+
+      {/* Galeri */}
+      <section className="galeri-container">
+
+        <h2 className="galeri-title">
+          Koleksi Foto Wisata
+        </h2>
+
+        <div className="galeri-grid">
+
+          {images.map((img, i) => (
+            <div
+              key={i}
+              className="galeri-card"
+            >
+
+              <Image
+                src={img}
+                width={500}
+                height={300}
+                alt={`galeri-${i}`}
+              />
+
+            </div>
+          ))}
+
+        </div>
+
+      </section>
 
     </main>
   );
