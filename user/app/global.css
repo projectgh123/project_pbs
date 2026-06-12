@@ -941,3 +941,62 @@ body{
   border-radius:20px;
   box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
+
+/* FOTO */
+
+.wisata-image-section{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  margin-bottom:50px;
+}
+
+.wisata-image{
+  width:100%;
+  height:500px;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+/* CARD */
+
+.wisata-content{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+
+  padding-bottom:80px;
+}
+
+.wisata-card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+  transition:0.3s;
+}
+
+.wisata-card:hover{
+  transform:translateY(-8px);
+}
+
+.wisata-card h2{
+  margin-bottom:15px;
+  color:#0f172a;
+}
+
+.wisata-card p,
+.wisata-card li{
+  color:#64748b;
+  line-height:1.8;
+}
+
+.wisata-card ul{
+  padding-left:20px;
+}
