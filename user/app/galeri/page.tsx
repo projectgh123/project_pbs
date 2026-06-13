@@ -5,7 +5,8 @@ export default function Galeri() {
     "/pantai1.jpg",
     "/pantai2.jpg",
     "/pantai3.jpg",
-    "/pantai4.jpg"
+    "/pantai4.jpg",
+    "/pantai5.jpeg",
   ];
 
   return (

@@ -23,7 +23,7 @@ export default function Wisata() {
       <section className="wisata-image-section">
 
         <Image
-          src="/pantai1.jpg"
+          src="/pantai4.jpg"
           alt="Pantai Sanggar"
           width={1000}
           height={500}
