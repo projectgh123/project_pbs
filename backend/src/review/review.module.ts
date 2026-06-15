@@ -1,18 +1,10 @@
-import { Injectable } from '@nestjs/common';
+import { Module } from '@nestjs/common';
+import { ReviewController } from './review.controller';
+import { ReviewService } from './review.service';
 import { PrismaService } from '../prisma/prisma.service';
 
-@Injectable()
-export class ReviewService {
-
-  constructor(private prisma: PrismaService) {}
-
-  findAll() {
-    return this.prisma.review.findMany();
-  }
-
-  create(data: any) {
-    return this.prisma.review.create({
-      data,
-    });
-  }
-}
+@Module({
+  controllers: [ReviewController],
+  providers: [ReviewService, PrismaService],
+})
+export class ReviewModule {}
