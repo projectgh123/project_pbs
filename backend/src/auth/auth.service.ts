@@ -1,14 +1,12 @@
-import { Body, Controller, Post } from '@nestjs/common';
-import { AuthService } from './auth.service';
+import { Injectable } from '@nestjs/common';
 import { LoginDto } from './dto/login.dto';
 
-@Controller('auth')
-export class AuthController {
-
-  constructor(private authService: AuthService) {}
-
-  @Post('login')
-  login(@Body() body: LoginDto) {
-    return this.authService.login(body);
+@Injectable()
+export class AuthService {
+  async login(body: LoginDto) {
+    return {
+      message: 'Login berhasil',
+      user: body.username,
+    };
   }
 }
