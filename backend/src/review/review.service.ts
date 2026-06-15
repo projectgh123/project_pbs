@@ -1,19 +1,18 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
-import { ReviewService } from './review.service';
-import { CreateReviewDto } from './dto/create-review.dto';
+import { Injectable } from '@nestjs/common';
+import { PrismaService } from '../prisma/prisma.service';
 
-@Controller('review')
-export class ReviewController {
+@Injectable()
+export class ReviewService {
 
-  constructor(private reviewService: ReviewService) {}
+  constructor(private prisma: PrismaService) {}
 
-  @Get()
   findAll() {
-    return this.reviewService.findAll();
+    return this.prisma.review.findMany();
   }
 
-  @Post()
-  create(@Body() body: CreateReviewDto) {
-    return this.reviewService.create(body);
+  create(data: any) {
+    return this.prisma.review.create({
+      data,
+    });
   }
 }
