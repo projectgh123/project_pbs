@@ -1,11 +1,12 @@
-import { IsEmail, IsNotEmpty, MinLength } from 'class-validator';
+import { Injectable } from '@nestjs/common';
+import { LoginDto } from './dto/login.dto';
 
-export class LoginDto {
-
-  @IsEmail()
-  email: string;
-
-  @IsNotEmpty()
-  @MinLength(6)
-  password: string;
+@Injectable()
+export class AuthService {
+  async login(body: LoginDto) {
+    return {
+      message: 'Login berhasil',
+      email: body.email,
+    };
+  }
 }
