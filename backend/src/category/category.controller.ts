@@ -12,6 +12,11 @@ export class CategoryController {
     return this.categoryService.findAll();
   }
 
+  @Get(':id')
+findOne(@Param('id') id: string) {
+  return this.categoryService.findOne(Number(id));
+}
+
   @Post()
   create(@Body() body: CreateCategoryDto) {
     return this.categoryService.create(body);
