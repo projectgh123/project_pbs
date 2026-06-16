@@ -11,6 +11,14 @@ export class CategoryService {
     return this.prisma.category.findMany();
   }
 
+  findOne(id: number) {
+  return this.prisma.category.findUnique({
+    where: {
+      id,
+    },
+  });
+}
+
   create(data: CreateCategoryDto) {
   return this.prisma.category.create({
     data,
