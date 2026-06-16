@@ -27,10 +27,10 @@ export class WisataController {
     return this.wisataService.findOne(Number(id));
   }
 
-  @Post()
-  create(@Body() body: CreateWisataDto) {
-    return this.wisataService.create(body);
-  }
+ @Post()
+ create(@Body() body: CreateWisataDto) {
+   return this.wisataService.create(body);
+ }
 
   @Patch(':id')
   update(
