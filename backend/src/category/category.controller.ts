@@ -12,6 +12,7 @@ export class CategoryController {
     return this.categoryService.findAll();
   }
 
+  @Post()
   create(@Body() body: CreateCategoryDto) {
     return this.categoryService.create(body);
   }
