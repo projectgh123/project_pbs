@@ -31,4 +31,9 @@ update(
   return this.categoryService.update(Number(id), body);
 }
 
+@Delete(':id')
+remove(@Param('id') id: string) {
+  return this.categoryService.remove(Number(id));
+}
+
 }
