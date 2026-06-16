@@ -1,11 +1,10 @@
-import { Injectable } from '@nestjs/common';
+import { Module } from '@nestjs/common';
+import { UserController } from './user.controller';
+import { UserService } from './user.service';
+import { PrismaService } from '../prisma/prisma.service';
 
-@Injectable()
-export class UserService {
-
-  findAll() {
-    return {
-      message: 'Semua user',
-    };
-  }
-}
+@Module({
+  controllers: [UserController],
+  providers: [UserService, PrismaService],
+})
+export class UserModule {}
