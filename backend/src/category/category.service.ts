@@ -11,4 +11,10 @@ export class CategoryService {
     return this.prisma.category.findMany();
   }
 
+  create(data: CreateCategoryDto) {
+  return this.prisma.category.create({
+    data,
+  });
+}
+
 }
