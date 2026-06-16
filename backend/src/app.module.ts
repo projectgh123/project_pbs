@@ -6,6 +6,7 @@ import { ReviewModule } from './review/review.module';
 import { UserModule } from './user/user.module';
 import { UploadModule } from './upload/upload.module';
 import { PrismaModule } from './prisma/prisma.module';
+import { CategoryModule } from './category/category.module';
 
 @Module({
   imports: [
