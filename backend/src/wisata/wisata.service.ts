@@ -28,7 +28,7 @@ export class WisataService {
     });
   }
 
-  create(data: any) {
+  create(data: CreateWisataDto) {
     return this.prisma.wisata.create({
       data,
     });
