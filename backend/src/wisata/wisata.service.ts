@@ -23,7 +23,7 @@ export class WisataService {
        },
        include: {
         category: true,
-        review: true,
+        reviews: true,
        },
     });
   }
