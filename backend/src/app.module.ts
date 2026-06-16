@@ -16,6 +16,7 @@ import { CategoryModule } from './category/category.module';
     UserModule,
     UploadModule,
     PrismaModule,
+    CategoryModule,
   ],
 })
 export class AppModule {}
