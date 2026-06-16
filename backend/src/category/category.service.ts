@@ -35,4 +35,12 @@ update(id: number, data: UpdateCategoryDto) {
   });
 }
 
+remove(id: number) {
+  return this.prisma.category.delete({
+    where: {
+      id,
+    },
+  });
+}
+
 }
