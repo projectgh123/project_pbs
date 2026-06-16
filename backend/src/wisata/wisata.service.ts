@@ -16,7 +16,13 @@ export class WisataService {
 
   findOne(id: number) {
     return this.prisma.wisata.findUnique({
-      where: { id },
+      where: { 
+        id,
+       },
+       include: {
+        category: true,
+        review: true,
+       },
     });
   }
 
