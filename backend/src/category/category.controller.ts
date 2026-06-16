@@ -23,4 +23,12 @@ findOne(@Param('id') id: string) {
     return this.categoryService.create(body);
   }
 
+  @Patch(':id')
+update(
+  @Param('id') id: string,
+  @Body() body: UpdateCategoryDto,
+) {
+  return this.categoryService.update(Number(id), body);
+}
+
 }
