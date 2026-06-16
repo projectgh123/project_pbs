@@ -34,7 +34,7 @@ export class WisataService {
     });
   }
 
-  update(id: number, data: any) {
+  update(id: number, data: UpdateWisataDto) {
     return this.prisma.wisata.update({
       where: { id },
       data,
