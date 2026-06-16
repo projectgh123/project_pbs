@@ -6,7 +6,7 @@ export class AuthService {
   async login(body: LoginDto) {
     return {
       message: 'Login berhasil',
-      user: body.username,
+      email: body.email,
     };
   }
 }
