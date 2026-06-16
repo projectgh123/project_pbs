@@ -4,6 +4,7 @@ import {
   Delete,
   Get,
   Param,
+  ParseIntPipe,
   Patch,
   Post,
 } from '@nestjs/common';
@@ -14,8 +15,7 @@ import { UpdateWisataDto } from './dto/update-wisata.dto';
 
 @Controller('wisata')
 export class WisataController {
-
-  constructor(private wisataService: WisataService) {}
+  constructor(private readonly wisataService: WisataService) {}
 
   @Get()
   findAll() {
@@ -23,25 +23,25 @@ export class WisataController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.wisataService.findOne(Number(id));
+  findOne(@Param('id', ParseIntPipe) id: number) {
+    return this.wisataService.findOne(id);
   }
 
- @Post()
- create(@Body() body: CreateWisataDto) {
-   return this.wisataService.create(body);
- }
+  @Post()
+  create(@Body() body: CreateWisataDto) {
+    return this.wisataService.create(body);
+  }
 
   @Patch(':id')
   update(
-    @Param('id') id: string,
+    @Param('id', ParseIntPipe) id: number,
     @Body() body: UpdateWisataDto,
   ) {
-    return this.wisataService.update(Number(id), body);
+    return this.wisataService.update(id, body);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.wisataService.remove(Number(id));
+  remove(@Param('id', ParseIntPipe) id: number) {
+    return this.wisataService.remove(id);
   }
 }
