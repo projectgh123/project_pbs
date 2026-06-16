@@ -7,7 +7,11 @@ export class WisataService {
   constructor(private prisma: PrismaService) {}
 
   findAll() {
-    return this.prisma.wisata.findMany();
+    return this.prisma.wisata.findMany({
+      include: {
+        category: true,
+      }
+    });
   }
 
   findOne(id: number) {
